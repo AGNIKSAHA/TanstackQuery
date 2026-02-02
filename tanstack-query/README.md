@@ -24,15 +24,15 @@ This project focuses on **real-world frontend architecture**, clean separation o
 ## 🧠 Tech Stack
 
 ### Frontend
-- React  
-- TypeScript  
-- TanStack Query  
-- React Router v7  
-- Axios  
-- Tailwind CSS  
+- React
+- TypeScript
+- TanStack Query
+- React Router v7
+- Axios
+- Tailwind CSS
 
 ### Backend (Mock API)
-- JSONPlaceholder  
+- JSONPlaceholder
 
 > ⚠️ JSONPlaceholder is a fake REST API.  
 > Create, update, and delete requests return successful responses but **do not persist data**.
@@ -57,26 +57,27 @@ Pagination is implemented using query parameters for start index and page size.
 
 ## 📂 Folder Structure
 
+```
 src/
 ├── api/
-│ └── api.ts # API configuration and requests
+│   └── api.ts
 ├── components/
-│ ├── Header.tsx # App header
-│ ├── Navbar.tsx # Navigation bar
-│ └── Footer.tsx # Footer
+│   ├── Header.tsx
+│   ├── Navbar.tsx
+│   └── Footer.tsx
 ├── layout/
-│ └── Layout.tsx # Shared application layout
+│   └── Layout.tsx
 ├── pages/
-│ ├── Home.tsx # Home page
-│ ├── FetchRq.tsx # Paginated posts list
-│ ├── FetchIndv.tsx # Single post details
-│ └── NotFound.tsx # 404 page
+│   ├── Home.tsx
+│   ├── FetchRq.tsx
+│   ├── FetchIndv.tsx
+│   └── NotFound.tsx
 ├── types/
-│ └── Post.ts # Post type definition
-├── router.tsx # React Router v7 configuration
-├── App.tsx # App root
-└── main.tsx # Application entry point
-
+│   └── Post.ts
+├── router.tsx
+├── App.tsx
+└── main.tsx
+```
 
 ---
 
@@ -139,46 +140,52 @@ Install dependencies:
 
 ```bash
 npm install
+```
+
 Start the development server:
 
+```bash
 npm run dev
+```
+
 The application will start locally and open in your browser.
 
-⚠️ Important Notes
-JSONPlaceholder does not save data
+---
 
-All mutations are simulated
+## ⚠️ Important Notes
 
-Data resets on refresh
+- JSONPlaceholder does not save data
+- All mutations are simulated
+- Data resets on refresh
+- Ideal for learning, demos, and architectural reference
 
-Ideal for learning, demos, and architectural reference
+---
 
-🎯 Learning Outcomes
+## 🎯 Learning Outcomes
+
 This project helps you understand:
 
-Server-state management with TanStack Query
+- Server-state management with TanStack Query
+- Pagination with cached data
+- URL-driven UI state
+- Route-based layouts
+- Clean frontend architecture
+- Cache synchronization after mutations
+- Real-world list → detail navigation flow
 
-Pagination with cached data
+---
 
-URL-driven UI state
+## 📌 Future Improvements
 
-Route-based layouts
+- Infinite scrolling
+- Optimistic updates with rollback
+- Custom confirmation modals
+- Toast notifications
+- Authentication and protected routes
+- Integration with a real backend API
 
-Clean frontend architecture
+---
 
-Cache synchronization after mutations
+## 📄 License
 
-Real-world list → detail navigation flow
-
-📌 Future Improvements
-Infinite scrolling
-
-Optimistic updates with rollback
-
-Custom confirmation modals
-
-Toast notifications
-
-Authentication and protected routes
-
-Integration with a real backend API
+This project is intended for **learning and demonstration purposes**.
